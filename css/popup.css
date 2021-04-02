@@ -1,0 +1,23 @@
+header {
+    padding: 1em 0.5em;
+    background-color: #f6f6f6;
+}
+
+main {
+    margin: 2em 0;
+}
+
+.title {
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.days {
+    font-size: 5em;
+    font-weight: bold;
+    color: #f48024;
+}
+
