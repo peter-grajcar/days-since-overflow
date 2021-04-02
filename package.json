@@ -11,6 +11,8 @@
         "web-ext": "^6.0.0"
     },
     "scripts": {
+        "run": "web-ext run",
+        "build": "web-ext build",
         "lint": "web-ext lint"
     }
 }
