@@ -1,6 +1,6 @@
 {
     "name": "days-without-overflow",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Firefox extension which counts days since last Stack Overflow visit.",
     "author": {
         "name": "Peter Grajcar",

@@ -1,8 +1,10 @@
 const days = document.getElementById("days");
 
 function setDays(historyItems) {
+    let re = new RegExp("^https?://stackoverflow.com.*")
     for (let item of historyItems) {
-        if (!item.url.startsWith("https://stackoverflow.com"))
+        console.log(item)
+        if (!re.test(item.url))
             continue;
 
         let lastVisit = new Date(item.lastVisitTime);
@@ -14,6 +16,7 @@ function setDays(historyItems) {
 }
 
 browser.history.search({
-    text: "stackoverflow.com"
+    text: "stackoverflow.com",
+    startTime: 0
 }).then(setDays);
 
