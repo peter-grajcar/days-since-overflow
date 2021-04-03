@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/peter-grajcar/days-since-overflow.git"
+        "url": "git://github.com/peter-grajcar/days-without-overflow.git"
     },
     "license": "MPL 2.0",
     "dependencies": {
