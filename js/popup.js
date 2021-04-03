@@ -3,7 +3,6 @@ const days = document.getElementById("days");
 function setDays(historyItems) {
     let re = new RegExp("^https?://stackoverflow.com.*")
     for (let item of historyItems) {
-        console.log(item)
         if (!re.test(item.url))
             continue;
 
