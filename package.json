@@ -6,6 +6,10 @@
         "name": "Peter Grajcar",
         "email": "peter.grajcar131@gmail.com"
     },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/peter-grajcar/days-since-overflow.git"
+    },
     "license": "MPL 2.0",
     "dependencies": {
         "web-ext": "^6.0.0"
