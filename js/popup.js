@@ -1,14 +1,19 @@
 const days = document.getElementById("days");
 
 function setDays(historyItems) {
-    let lastVisit = new Date(historyItems[0].lastVisitTime);
-    let today = new Date();
-    let daysSinceLastVisit = Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24));
-    days.textContent = daysSinceLastVisit;
+    for (let item of historyItems) {
+        if (!item.url.startsWith("https://stackoverflow.com"))
+            continue;
+
+        let lastVisit = new Date(item.lastVisitTime);
+        let today = new Date();
+        let daysSinceLastVisit = Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24));
+        days.textContent = daysSinceLastVisit;
+        break;
+    }
 }
 
 browser.history.search({
-    text: "stackoverflow.com",
-    maxResults: 1
+    text: "stackoverflow.com"
 }).then(setDays);
 
